@@ -1,0 +1,35 @@
+{
+  "@context": "https://www.w3.org/2018/credentials/v1",
+  "type": "MyCustomCredential",
+  "title": "My Custom Credential",
+  "description": "This schema defines a custom credential format.",
+  "properties": {
+    "name": {
+      "description": "Name of the credential holder",
+      "type": "string"
+    },
+    "dob": {
+      "description": "Date of birth of the credential holder",
+      "type": "string",
+      "format": "date"
+    },
+    "address": {
+      "description": "Address of the credential holder",
+      "type": "string"
+    },
+    "pincode": {
+      "description": "Pincode of the credential holder",
+      "type": "string"
+    },
+    "city": {
+      "description": "City of the credential holder",
+      "type": "string"
+    },
+    "id": {
+      "description": "DID of the subject that owns the credential",
+      "type": "string",
+      "format": "uri"
+    }
+  },
+  "required": ["name", "dob", "address", "pincode", "city"]
+}
